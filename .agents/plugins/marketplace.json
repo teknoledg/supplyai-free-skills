@@ -1,0 +1,20 @@
+{
+  "name": "supplyai-free",
+  "interface": {
+    "displayName": "SupplyAI free skills"
+  },
+  "plugins": [
+    {
+      "name": "governed-builds",
+      "source": {
+        "source": "local",
+        "path": "./plugins/governed-builds"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

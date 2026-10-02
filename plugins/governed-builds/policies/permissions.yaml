@@ -1,0 +1,4 @@
+filesystem: project
+network: declared-domains
+shell: as-declared
+secrets: never-in-kit

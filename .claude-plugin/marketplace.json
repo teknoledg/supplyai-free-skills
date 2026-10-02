@@ -1,0 +1,15 @@
+{
+  "name": "supplyai-free",
+  "description": "Free, certified skills from SupplyAI. The full plugins are at https://supplyai.pro.",
+  "owner": {
+    "name": "Intelligent Assembly",
+    "url": "https://supplyai.pro"
+  },
+  "plugins": [
+    {
+      "name": "governed-builds",
+      "source": "./plugins/governed-builds",
+      "description": "Run B0-B6 ship gates and refuse to mark work shipped while a gate is missing or failing. Use when preparing a merge or running verify."
+    }
+  ]
+}

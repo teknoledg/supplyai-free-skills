@@ -1,0 +1,49 @@
+{
+  "name": "@supplyaipro/governed-builds",
+  "version": "1.0.2",
+  "description": "Run B0-B6 ship gates and refuse to mark work shipped while a gate is missing or failing. Use when preparing a merge or running verify.",
+  "license": "MIT",
+  "author": "Intelligent Assembly",
+  "homepage": "https://supplyai.pro/kits/supplyaipro/governed-builds",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teknoledg/supplyai-free-skills.git",
+    "directory": "plugins/governed-builds"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code-plugin",
+    "codex-plugin",
+    "cursor",
+    "skill",
+    "ship-gates",
+    "verification",
+    "governance",
+    "ci",
+    "release"
+  ],
+  "type": "module",
+  "bin": {
+    "supplyai-governed-builds": "bin/install.mjs"
+  },
+  "files": [
+    ".claude-plugin",
+    ".codex-plugin",
+    "skills",
+    "bin",
+    "policies",
+    "supply.yaml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "supply": {
+    "catalogueId": "@supplyaipro/governed-builds",
+    "certifiedTreeSha256": "be57fb762825bc1172d0462c04b6f2209ab1067d27b1e8439e637cf0fbc8f7cc"
+  }
+}

@@ -1,0 +1,15 @@
+schema: http://127.0.0.1:3000/schema/v1
+id: @supplyaipro/governed-builds
+name: Governed Builds
+version: 1.0.1
+publisher: Intelligent Assembly
+license: MIT · Free
+destinations:
+  - cursor
+  - codex
+
+permissions:
+  filesystem: project
+  network: declared-domains
+  shell: as-declared
+  secrets: never-in-kit

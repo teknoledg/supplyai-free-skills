@@ -1,0 +1,4 @@
+interface:
+  display_name: "Governed Builds"
+  short_description: "Run ship gates and refuse a partial pass"
+  default_prompt: "Use $governed-builds for this task: The charter has a verify command. B1 through B4 passed. B5 has not run. May I ship?"

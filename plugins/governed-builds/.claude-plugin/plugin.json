@@ -1,0 +1,20 @@
+{
+  "name": "governed-builds",
+  "displayName": "Governed Builds",
+  "version": "1.0.2",
+  "description": "Run B0-B6 ship gates and refuse to mark work shipped while a gate is missing or failing. Use when preparing a merge or running verify.",
+  "author": {
+    "name": "Intelligent Assembly",
+    "url": "https://supplyai.pro"
+  },
+  "homepage": "https://supplyai.pro/kits/supplyaipro/governed-builds",
+  "repository": "https://github.com/teknoledg/supplyai-free-skills",
+  "license": "MIT",
+  "keywords": [
+    "ship-gates",
+    "verification",
+    "governance",
+    "ci",
+    "release"
+  ]
+}
