@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Motion"
+  short_description: "Plan motion that respects reduced motion"
+  default_prompt: "Use $ui-motion for this task: apply the starter enter and lift CSS and honour prefers-reduced-motion."

@@ -1,0 +1,49 @@
+{
+  "name": "@supplyaipro/ui-motion",
+  "version": "1.0.2",
+  "description": "Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift.",
+  "license": "MIT",
+  "author": "Intelligent Assembly",
+  "homepage": "https://supplyai.pro/kits/supplyaipro/ui-motion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teknoledg/supplyai-free-skills.git",
+    "directory": "plugins/ui-motion"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code-plugin",
+    "codex-plugin",
+    "cursor",
+    "skill",
+    "animation",
+    "css",
+    "accessibility",
+    "reduced-motion",
+    "ui"
+  ],
+  "type": "module",
+  "bin": {
+    "supplyai-ui-motion": "bin/install.mjs"
+  },
+  "files": [
+    ".claude-plugin",
+    ".codex-plugin",
+    "skills",
+    "bin",
+    "policies",
+    "supply.yaml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "supply": {
+    "catalogueId": "@supplyaipro/ui-motion",
+    "certifiedTreeSha256": "959facca2f866aae13574f714f06ca91f9253c522596c385f835e5b769f2a5dd"
+  }
+}

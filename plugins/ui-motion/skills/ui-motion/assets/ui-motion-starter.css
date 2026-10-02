@@ -1,0 +1,51 @@
+/*
+ * UI Motion starter — page enter + card lift
+ * Map selectors to the project: page wrapper (often main) and cards (often .card).
+ * Do not apply animation or transition to layout chrome the README marks as still.
+ */
+
+@keyframes ui-motion-page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page enter — attach to the route/page wrapper, not the site header */
+main {
+  animation: ui-motion-page-enter 200ms ease-out both;
+}
+
+/* Card lift — hover/focus only; use transform, not layout properties */
+.card {
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main {
+    animation: none;
+    animation-duration: 0ms;
+  }
+
+  .card {
+    transition-duration: 0ms;
+  }
+
+  .card:hover,
+  .card:focus-within {
+    transform: none;
+    box-shadow: none;
+  }
+}

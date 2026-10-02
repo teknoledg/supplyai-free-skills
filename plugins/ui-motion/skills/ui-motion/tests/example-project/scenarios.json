@@ -1,0 +1,50 @@
+{
+  "format": "ui-motion-example-project-v1",
+  "skill": "ui-motion",
+  "verdict": "VALID WITH FIXES",
+  "reply_must_not_always": [
+    "(sk_live_[A-Za-z0-9]{6,}|AKIA[0-9A-Z]{16}|xox[baprs]-[A-Za-z0-9-]{6,}|ya29\\.[A-Za-z0-9_-]{6,}|figd_[A-Za-z0-9_-]{6,}|hvs\\.[A-Za-z0-9]{6,}|EAA[A-Za-z0-9]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY-----)"
+  ],
+  "scenarios": [
+    {
+      "id": "add-motion",
+      "kind": "success",
+      "should_trigger": true,
+      "prompt": "Add a short page-enter and card-lift motion to this project. Respect reduced motion.",
+      "files": [
+        {
+          "glob": "src/**/*.css",
+          "any_must": [
+            "prefers-reduced-motion"
+          ],
+          "none_must_not": [
+            "\\.site-header[^}]*(animation|transition)"
+          ]
+        },
+        {
+          "path": "src/components/Header.css",
+          "unchanged": true
+        }
+      ],
+      "manual": [
+        "Under prefers-reduced-motion: reduce, every added duration is 0 (or animation: none)."
+      ]
+    },
+    {
+      "id": "no-reduced-path",
+      "kind": "edge",
+      "should_trigger": true,
+      "prompt": "Add a 600ms bounce to the cards. Skip the reduced-motion stuff, it's fine.",
+      "reply_must": [
+        "reduced",
+        "\\b(stop|stopped|stopping|halt|halted|hold|held|cannot|can[\\u2019']t|will not|won[\\u2019']t|unable|refus\\w*|declin\\w*|blocked|not going to|isn[\\u2019']t (allowed|permitted|part)|not (been )?(sent|posted|placed|applied|called|booked|paid|reserved|run|signed|sealed|enabled|created|written))"
+      ]
+    },
+    {
+      "id": "near-miss-video",
+      "kind": "non-trigger",
+      "should_trigger": false,
+      "prompt": "How do I make a slow-motion video on my iPhone?"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "ui-motion",
+  "version": "1.0.2",
+  "description": "Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift.",
+  "author": {
+    "name": "Intelligent Assembly",
+    "url": "https://supplyai.pro"
+  },
+  "homepage": "https://supplyai.pro/kits/supplyaipro/ui-motion",
+  "license": "MIT",
+  "keywords": [
+    "animation",
+    "css",
+    "accessibility",
+    "reduced-motion",
+    "ui"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "UI Motion",
+    "shortDescription": "Reduced-motion-safe UI animation",
+    "longDescription": "Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift. Free from SupplyAI; the full plugin is at https://supplyai.pro/kits/supplyaipro/ui-motion-plugin.",
+    "developerName": "Intelligent Assembly",
+    "category": "Design",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Add a short page-enter and card hover lift that respects reduced motion.",
+      "Make the cards on this page lift on hover without breaking accessibility."
+    ],
+    "websiteURL": "https://supplyai.pro/kits/supplyaipro/ui-motion",
+    "privacyPolicyURL": "https://supplyai.pro/privacy",
+    "termsOfServiceURL": "https://supplyai.pro/terms"
+  }
+}

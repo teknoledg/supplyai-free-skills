@@ -10,6 +10,11 @@
       "name": "governed-builds",
       "source": "./plugins/governed-builds",
       "description": "Run B0-B6 ship gates and refuse to mark work shipped while a gate is missing or failing. Use when preparing a merge or running verify."
+    },
+    {
+      "name": "ui-motion",
+      "source": "./plugins/ui-motion",
+      "description": "Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift."
     }
   ]
 }

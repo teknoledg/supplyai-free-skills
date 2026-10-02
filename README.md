@@ -5,6 +5,7 @@ Free, tested Agent Skills from [SupplyAI](https://supplyai.pro), published by In
 | Skill | What it does | Full version |
 | --- | --- | --- |
 | [Governed Builds](plugins/governed-builds/README.md) | Run B0-B6 ship gates and refuse to mark work shipped while a gate is missing or failing. Use when preparing a merge or running verify. | [governed-builds-plugin](https://supplyai.pro/kits/supplyaipro/governed-builds-plugin), [enterprise-delivery-stack](https://supplyai.pro/kits/supplyaipro/enterprise-delivery-stack) |
+| [UI Motion](plugins/ui-motion/README.md) | Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift. | [ui-motion-plugin](https://supplyai.pro/kits/supplyaipro/ui-motion-plugin) |
 
 ## Install
 

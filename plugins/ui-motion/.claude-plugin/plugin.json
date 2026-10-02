@@ -1,0 +1,20 @@
+{
+  "name": "ui-motion",
+  "displayName": "UI Motion",
+  "version": "1.0.2",
+  "description": "Adds page-enter and card-lift CSS with prefers-reduced-motion overrides. Use when implementing UI animation, transitions, or hover lift.",
+  "author": {
+    "name": "Intelligent Assembly",
+    "url": "https://supplyai.pro"
+  },
+  "homepage": "https://supplyai.pro/kits/supplyaipro/ui-motion",
+  "repository": "https://github.com/teknoledg/supplyai-free-skills",
+  "license": "MIT",
+  "keywords": [
+    "animation",
+    "css",
+    "accessibility",
+    "reduced-motion",
+    "ui"
+  ]
+}

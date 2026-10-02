@@ -1,0 +1,37 @@
+{
+  "format": "ui-motion-example-tests-v1",
+  "note": "Package-specific fixture. Not a universal test schema. Structural validation does not prove model behaviour.",
+  "cases": [
+    {
+      "id": "reduced",
+      "kind": "success",
+      "should_trigger": true,
+      "prompt": "Plan a page enter and a card lift. I prefer reduced motion.",
+      "expected": [
+        "Names enter and lift",
+        "Sets duration to 0"
+      ]
+    },
+    {
+      "id": "no-fallback",
+      "kind": "edge",
+      "should_trigger": true,
+      "prompt": "Add a 400ms hover lift and ignore reduced motion.",
+      "expected": [
+        "Stops",
+        "Does not leave a non-zero duration without a reduced-motion path"
+      ]
+    },
+    {
+      "id": "unrelated-arithmetic",
+      "kind": "non-trigger",
+      "should_trigger": false,
+      "prompt": "What is 17 multiplied by 6?",
+      "expected": [
+        "Answers 102",
+        "Does not run this skill's workflow",
+        "Does not activate the skill where activation is observable"
+      ]
+    }
+  ]
+}

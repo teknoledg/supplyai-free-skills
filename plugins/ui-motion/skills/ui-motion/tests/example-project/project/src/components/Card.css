@@ -1,0 +1,9 @@
+.card {
+  color: var(--color-ink);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  font: var(--type-body);
+}
+@media (min-width: 768px) {
+  .card { padding: calc(var(--space-4) * 2); }
+}
